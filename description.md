@@ -24,7 +24,8 @@ Example: OLed with 128x64 pixels
 
 In this example we need the function "u8g2_m_16_8_1", the rest can be deleted.  
 
-I use a Seeed Display [https://www.seeedstudio.com/Grove-OLED-Display-0.96%22-p-781.html] with I2C-bus, i think it works similar with other monochrom displays and spi-bus.
+I use a [Seeed Display](https://www.seeedstudio.com/Grove-OLED-Display-0.96%22-p-781.html) with I2C-bus, i think it works similar with other monochrom displays and spi-bus.
+This display have a SSD1308 device, I always use driver for SSD1306, I didn't find a difference.
 
 Compile the project and program your controller.  
 
