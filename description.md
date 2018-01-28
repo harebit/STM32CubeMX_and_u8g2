@@ -1,4 +1,5 @@
-###Description
+# Description
+
 I presume you have an IDE, in this example I use SW4STM32 (Eclipse), STM32CubeMX and prepared a workspace, maybe with the name "oled".
   
 Start STM32CubeMX, open a new Project, select your board/MCU, activate I2C1, choose the pins, the standard configuration for I2C is right (address =0, we add the address later).
@@ -6,7 +7,7 @@ Configure the Project Settings, give your project a name e.g. "laura", choose yo
  useful for one project in the workspace). Start "Generate Code" and open the project.  
  
 Download u8g2 from [github.com/olikraus/u8g2](https://github.com/olikraus/u8g2), we need only the folder "csrc".  
-Import (_don't copy with the explorer_) to the folder "inc". Select "General -- File System" and from "\u8g2-master\csrc", select "u8g2.h" and "u8x8.h" and finish this. 
+import (_don't copy with the explorer_) to the folder "inc". Select "General"--"File System" and from "\u8g2-master\csrc", select "u8g2.h" and "u8x8.h" and finish this. 
 In the same way import "u8x8_stm32_HAL.h" from this repository.  
 Then import all c-files from "\u8g2-master\csrc" to the folder "src", next import "main.c" and "u8x8_stm32_HAL.c" from this repository.  
 
@@ -25,7 +26,9 @@ In this example we need the function "u8g2_m_16_8_1", the rest can be deleted.
 
 Compile the project and program your controller.  
 
-The display should look like this.![Nucleo-SSD1308](https://github.com/harebit/cubemx_and_u8g2/blob/master/Nucleo-SSD1308.JPG?raw=true)
+The display should look like this. 
+
+![Nucleo-SSD1308](https://github.com/harebit/cubemx_and_u8g2/blob/master/Nucleo-SSD1308.JPG?raw=true)
 
 
 harebit
